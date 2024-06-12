@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout{
+    /* border: 2px solid rgb(172, 71, 71); */
+    background-color: #11324d;
+    color:white;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    
+}
+.info{
+    /* border: 2px solid rgb(172, 71, 71); */
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+ .info h2{
+    position: relative;
+    padding-bottom: 1%;
+ }
+.column{
+    display: flex;
+    /* border: 2px solid rgb(172, 71, 71); */
+    position: absolute;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    width:80%;
+}
+.column1{
+    /* border: 2px solid rgb(172, 71, 71); */
+    background-color: #f5f0f0;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width:25%;
+    
+}
+
+.learning{
+    background-color: #f5f0f0;
+    border: 2px solid rgb(234, 226, 226);
+    color: black;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    margin-top: 20%;
+    margin-right: 4%;
+    border-radius: 2%;
+    box-shadow: 2px 2px rgb(197, 191, 191);
+}
+#learning_info1,#learning_img1{
+    display: none;
+}
+#technology_info1,#technology_img1{
+    display: none;
+}
+#communication_info1,#communication_img1{
+    display: none;
+}
+.technology{
+    background-color: #f5f0f0;
+    border: 2px solid rgb(234, 226, 226);
+    color: black;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+    margin: 2%;
+    margin-right: 4%;
+    margin-top: 20%;
+    border-radius: 2%;
+    box-shadow: 2px 2px rgb(197, 191, 191);
+}
+
+
+
+.communication{
+    background-color: #f5f0f0;
+    border: 2px solid rgb(234, 226, 226);
+    color: black;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items:center;
+    margin: 2%;
+    margin-right: 4%;
+    margin-top: 20%;
+    border-radius: 2%;
+    box-shadow: 2px 2px rgb(197, 191, 191);
+}
+#lplus{
+    display: none;
+    position: relative;
+    padding-left: 27%;
+}
+#tplus{
+    display: none;
+    position: relative;
+    padding-left: 20%;
+}
+#cplus{
+    display: none;
+    position: relative;
+    padding-left: 4%;
+}
+
+#lminus{
+    display: none;
+    position: relative;
+    padding-left: 27%;
+}
+#tminus{
+    display: none;
+    position: relative;
+    padding-left: 20%;
+}
+#cminus{
+    display: none;
+    position: relative;
+    padding-left: 4%;
+}
+
+.column2{
+    /* border: 3px solid green; */
+    background-color: #64b4c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    width: 37%;
+    }
+    
+    .column2 h1,h3{
+        text-align: center;
+    }
+    .column2 h3{
+        padding-bottom: 4%;
+    }
+    .arrow{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 10%;
+    }
+    
+    .arrow img{
+        position: relative;
+        padding-bottom: 3%;
+        padding-left: 3%;
+    }
+    #col2head{
+        background-color:#95bbc5; 
+        padding: 0% ;
+        margin-bottom: 7%;
+    }
+    #technology_info{
+        display: none;
+
+    }
+
+    #communication_info{
+        display: none;
+
+    }
+.column3{
+    /* border: 2px solid rgb(172, 71, 71); */
+    background-color: antiquewhite;
+    height: 450px;
+    position: relative;
+    width: 38%;  
+} 
+
+.column3 img{
+    width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+#learning_img{
+    display: block;
+    
+}
+#technology_img{
+    display: none;
+   
+}
+#communication_img{
+    display: none;
+    
+}
+/* **************************media query************************* */
+@media screen and (max-width: 480px) {
+    
+    .column{
+        display: block;
+        /* border: 2px solid rgb(172, 71, 71); */
+        position: absolute;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 2%;
+        width:80%;
+    }
+    .column1{
+        /* border: 2px solid rgb(172, 71, 71); */
+        background-color: #11324d;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width:100%;   
+    }
+    #lplus{
+        display: block;
+        position: relative;
+        padding-left: 27%;
+    }
+    #tplus{
+        display: block;
+        position: relative;
+        padding-left: 20%;
+    }
+    #cplus{
+        display: block;
+        position: relative;
+        padding-left: 4%;
+    }
+    
+    #lminus{
+        display: none;
+        position: relative;
+        padding-left: 27%;
+    }
+    #tminus{
+        display: none;
+        position: relative;
+        padding-left: 20%;
+    }
+    #cminus{
+        display: none;
+        position: relative;
+        padding-left: 4%;
+    }
+
+    .column2,.column3{
+        display: none;
+    }
+    #learning_info1{
+        display: block;   
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size:60%; 
+        background-color: #64b4c8;
+        opacity: 0.8; 
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+    }
+    #col2head{
+        background-color: #5e8793;
+    }
+    #technology_info1{
+        display: block; 
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size:60%;
+        background-color: #64b4c8;
+        opacity: 0.8; 
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+    }
+    #technology_info1 h1{
+       margin: -1.5%;
+    }
+    
+    #communication_info1{
+        display: block; 
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size:60%;
+        background-color: #64b4c8;
+        opacity: 0.5; 
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+    }
+    #communication_info1 h1{
+        margin: -1.5%;
+        
+    }
+
+    .respcolumn21{
+        /* border: 3px solid green; */
+        background-color: #64b4c8;
+        background-image: url('DL-Learning-1.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 35%;
+        width: 97%;
+        margin-left: 2%;
+        
+        background-size: cover;
+        display: none;
+        }
+
+        #learning_img1{
+            display: none;
+        }
+    .respcolumn21 h1,h3{
+        text-align: center;
+    }
+    .respcolumn21 h3{
+        padding-bottom: 4%;
+    }
+    .arrow{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 10%;
+    }
+  
+    .arrow img{
+        position: relative;
+        padding-bottom: 3%;
+        padding-left: 3%;
+    }
+    .learning{
+        background-color: #f5f0f0;
+        /* border: 2px solid rgb(234, 226, 226); */
+        color: black;
+        display: flex;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        width: 96.5%;
+        margin: 2%;
+        margin-top: 10%;
+        margin-right: 2%;
+       
+        /* box-shadow: 2px 2px rgb(197, 191, 191); */
+    }
+
+    .technology{
+        background-color: #f5f0f0;
+        border: 2px solid rgb(234, 226, 226);
+        color: black;
+        display: flex;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        width: 96.5%;
+        margin: 2%;
+        margin-top: 5%;
+        margin-right: 2%;
+        /* border-radius: 7%; */
+        /* box-shadow: 2px 2px rgb(197, 191, 191); */
+    }
+    .respcolumn22{
+        /* border: 3px solid green; */
+        /* background-color: #64b4c8; */
+        background-image: url("DL-Technology.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 35%;
+        width: 97%;
+        margin-left: 2%;
+        display: none;
+        }
+    .respcolumn22 h1,h3{
+        text-align: center;
+        margin-top: -3%;
+    }
+    .respcolumn22 h3{
+        padding-bottom: 4%;
+    }
+
+    .communication{
+        background-color: #f5f0f0;
+        border: 2px solid rgb(234, 226, 226);
+        color: black;
+        display: flex;
+        position:relative;
+        justify-content: center;
+        align-items: center;
+        width: 96.5%;
+        margin: 2%;
+        margin-top: 5%;
+        margin-right: 2%;
+        /* border-radius: 7%; */
+        /* box-shadow: 2px 2px rgb(197, 191, 191); */
+    }
+    .respcolumn23{
+        /* border: 3px solid green; */
+        background-image: url("DL-Communication.jpg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 35%;
+        width: 97%;
+        margin-left: 2%;
+        display: none;
+        }
+    .respcolumn23 h1,h3{
+        text-align: center;
+        margin-top: -3%;
+    }
+    .respcolumn23 h3{
+        padding-bottom: 4%;
+    }
+  }

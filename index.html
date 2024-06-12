@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#lminus").click(function(){
+    $("#respcolumn1").hide();
+    $("#lplus").show();
+    $("#lminus").hide();
+  });
+  $("#lplus").click(function(){
+    $("#respcolumn1").show();
+    $("#lminus").show();
+    $("#lplus").hide();
+  });
+});
+
+$(document).ready(function(){
+    $("#tminus").click(function(){
+      $("#respcolumn2").hide();
+      $("#tplus").show();
+      $("#tminus").hide();
+    });
+    $("#tplus").click(function(){
+      $("#respcolumn2").show();
+      $("#tminus").show();
+      $("#tplus").hide();
+    });
+  });
+
+
+  $(document).ready(function(){
+    $("#cminus").click(function(){
+      $("#respcolumn3").hide();
+      $("#cplus").show();
+      $("#cminus").hide();
+    });
+    $("#cplus").click(function(){
+      $("#respcolumn3").show();
+      $("#cminus").show();
+      $("#cplus").hide();
+    });
+  });
+
+</script>
+</head>
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="info">
+            <h2>DelphianLogic in Action</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean commodo</h6>
+        </div>
+        <div class="column">
+            <div class="column1">
+                <div class="learning" onclick="showlearning()">
+                    <img onclick="showlearning()" src="DL-learning.svg" alt="learning image">
+                    <h2>Learning</h2>
+                    <img  id="lminus" src="minus-01.svg" alt="minus">
+                    <img  id="lplus" src="plus-01.svg" alt="plus">
+                </div>
+                <div  id="respcolumn1" class="respcolumn21">
+                    <div id="learning_info1">
+                        <h3 id="col2head">DIGITAL LEARNING INFRASTRUCTURE</h3>
+                        <h1>Usability enhancement and</h1>
+                        <h1> Training for Transaction</h1>
+                        <h1> Portal for Customer</h1>
+                        <div class="arrow">
+                            <h3>Learn More</h3>
+                            <img src="arrow-right.svg" alt="learning image">
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="technology" onclick="showtechnology()">
+                    <img onclick="showtechnology()" src="DL-technology.svg" alt="learning image">
+                    <h2>Technology</h2>
+                    <img  id="tplus" src="plus-01.svg" alt="plus">
+                    <img  id="tminus" src="minus-01.svg" alt="minus">
+                </div>
+                <div id="respcolumn2" class="respcolumn22">
+                    <div id="technology_info1">
+                        <h3 id="col2head">INFORMATION ABOUT TECHNOLOGY</h3>
+                        <h1>Technology is a Gift of God.</h1>
+                        <h1> The more technique you </h1>
+                        <h1>have,the less you have</h1>
+                        <h1> to worry about it.</h1>
+                        <div class="arrow">
+                            <h3>Learn More</h3>
+                            <img src="arrow-right.svg" alt="technology image">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="communication" onclick="showcommunication()">
+                    <img src="DL-communication.svg" alt="learning image">
+                    <h2>Communication</h2>
+                    <img  id="cplus" src="plus-01.svg" alt="plus">
+                    <img  id="cminus" src="minus-01.svg" alt="minus">
+                </div>
+                <div id="respcolumn3" class="respcolumn23">
+                    <div id="communication_info1">
+                        <h3 id="col2head">COMMUNICATION</h3>
+                        <h1>Good Communication is the</h1>
+                        <h1>Bridge between Confusion </h1>
+                        <h1>and Clarity. </h1>
+                        <div class="arrow">
+                            <h3>Learn More</h3>
+                            <img src="arrow-right.svg" alt="communication image">
+                        </div>
+                    </div>
+                </div>
+                <img id="communication_img1" src="DL-Communication.jpg" alt="learning image">
+            </div>
+
+
+
+            <div class="column2">
+                <div id="learning_info">
+                    <h3 id="col2head">DIGITAL LEARNING INFRASTRUCTURE</h3>
+                    <h1>Usability enhancement and</h1>
+                    <h1> Training for Transaction</h1>
+                    <h1> Portal for Customer</h1>
+                    <div class="arrow">
+                        <h3>Learn More</h3>
+                        <img src="arrow-right.svg" alt="learning image">
+                    </div>
+                </div>
+
+                <div id="technology_info">
+                    <h3 id="col2head">INFORMATION ABOUT TECHNOLOGY</h3>
+                    <h1>Technology is a Gift of God.</h1>
+                    <h1> The more technique you </h1>
+                    <h1>have,the less you have</h1>
+                    <h1> to worry about it.</h1>
+                    <div class="arrow">
+                        <h3>Learn More</h3>
+                        <img src="arrow-right.svg" alt="technology image">
+                    </div>
+                </div>
+
+                <div id="communication_info">
+                    <h3 id="col2head">COMMUNICATION</h3>
+                    <h1>Good Communication is the</h1>
+                    <h1>Bridge between Confusion </h1>
+                    <h1>and Clarity. </h1>
+                    <div class="arrow">
+                        <h3>Learn More</h3>
+                        <img src="arrow-right.svg" alt="communication image">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column3">
+                <img id="learning_img" src="DL-Learning-1.jpg" alt="learning image">
+                <img id="technology_img" src="DL-Technology.jpg" alt="learning image">
+                <img id="communication_img" src="DL-Communication.jpg" alt="learning image">
+            </div>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
